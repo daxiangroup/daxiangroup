@@ -1,4 +1,4 @@
-# PyroCMS Community Editionn
+# PyroCMS Community Edition
 
 * [Website](http://pyrocms.com/)
 * [Documentation](http://pyrocms.com/docs)
