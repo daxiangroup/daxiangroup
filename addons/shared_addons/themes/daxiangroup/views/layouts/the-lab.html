@@ -1,0 +1,63 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    {{ theme:partial name="metadata" }}
+    {{ theme:js file="libs/modernizr-2.5.3.min.js" }}
+</head>
+<body>
+    <div id="tupperware">
+        {{ theme:partial name="header" }}
+
+        <div id="tupperware-content">
+            {{ theme:partial name="navigation-main" }}
+
+            <div class="shim">
+                {{ session:messages success="success-box" notice="notice-box" error="error-box" }}
+
+                <div class="content">
+                    <h2>The Lab</h2>
+
+                    <p>You say you're a client, are you?</p>
+
+                    <p>By logging in below, you can gain access to any project currently under way, submit help tickets to your development team, review any past or pending invoices and generally feel awesome because you have credentials to something that most people don't...</p>
+
+                    <form name="lab-login" id="lab-login" method="post" action="http://lab.daxiangroup.com">
+                        <ul>
+                            <li>
+                                <label for="frm-login">Login</label>
+                                <input type="text" name="login" id="frm-login" />
+                            </li>
+                            <li>
+                                <label for="frm-password">Password</label>
+                                <input type="password" name="password" id="frm-password" />
+                            </li>
+                            <li>
+                                <input type="submit" value="Submit" id="frm-submit" />
+                            </li>
+                        </ul>
+                    </form>
+                    {{ theme:image file="img-the_lab.jpg" }}
+
+                    {{ template:body }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript at the bottom for fast page loading -->
+
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+    {{ theme:js file="daxiangroup.js" }}
+
+    {{ integration:analytics }}
+</body>
+</html>
