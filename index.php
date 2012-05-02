@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 # If you have already installed then delete this
 if ( ! file_exists('system/cms/config/database.php'))
