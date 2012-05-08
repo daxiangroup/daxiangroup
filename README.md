@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PyroCMS Community Edition
 
 * [Website](http://pyrocms.com/)
