@@ -1,57 +1,66 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Laravel: A Framework For Web Artisans</title>
-	<meta name="viewport" content="width=device-width">
-	{{ HTML::style('laravel/css/style.css') }}
-</head>
-<body>
-	<div class="wrapper">
-		<header>
-			<h1>Laravel</h1>
-			<h2>A Framework For Web Artisans</h2>
+@layout('layouts/container')
 
-			<p class="intro-text" style="margin-top: 45px;">
-			</p>
-		</header>
-		<div role="main" class="main">
-			<div class="home">
-				<h2>Learn the terrain.</h2>
+@section('content')
+	<!-- Section #1 / Intro -->
+	<section id="first" class="story" data-speed="8" data-type="background">    	
+		<div class="smashinglogo" data-type="sprite" data-offsetY="100" data-Xposition="50%" data-speed="-2"></div>		
+		<article>
 
-				<p>
-					You've landed yourself on our default home page. The route that
-					is generating this page lives at:
-				</p>
+			{{ HTML::image('img/tutorial-title.png', 'tutorial-title', array('width'=>711, 'height'=>242)) }}
+			<p>Words and pictures by Richard Shepherd / Twitter: <a href="http://twitter.com/richardshepherd" target="_blank">@richardshepherd</a> / Web: <a href="http://richardshepherd.com">richardshepherd.com</a></p>
+			<p>GitHub: <a href="https://github.com/richardshepherd/Parallax-Scrolling/">Fork it here!</a></p>
+	    </article>
+	</section>
 
-				<pre>{{ path('app') }}routes.php</pre>
-
-				<p>And the view sitting before you can be found at:</p>
-
-				<pre>{{ path('app') }}views/home/index.php</pre>
-
-				<h2>Grow in knowledge.</h2>
-
-				<p>
-					Learning to use Laravel is amazingly simple thanks to
-					its {{ HTML::link('docs', 'wonderful documentation') }}.
-				</p>
-
-				<h2>Create something beautiful.</h2>
-
-				<p>
-					Now that you're up and running, it's time to start creating!
-					Here are some links to help you get started:
-				</p>
-
-				<ul class="out-links">
-					<li><a href="http://laravel.com">Official Website</a></li>
-					<li><a href="http://forums.laravel.com">Laravel Forums</a></li>
-					<li><a href="http://github.com/laravel/laravel">GitHub Repository</a></li>
-				</ul>
+	<!-- Section #2 / Background Only -->
+	<section id="second" class="story" data-speed="8" data-type="background">
+		<article>
+			<h2>The Lowdown</h2>
+			<div class="textbox">
+				<p>We are a web development firm.</p>
+				<p>That encompasses everything from a simple layout to a complex, backend system. Whatever your hurdle might be, The Daxian Group can provide you with a solution that will make you smile.</p>
+				<p>You can take comfort knowing that the product you described is exactly what you're going to get at the end of the process. Chances are, it's going to be better than what you expected. That's not something we try to do for our customers, it's something that just happens.</p>
 			</div>
-		</div>
-	</div>
-</body>
-</html>
+		</article>
+	</section>
+	
+	<!-- Section #3 / Photos -->
+	<section id="third" class="story" data-speed="6" data-type="background" data-offsetY="250">    	
+		<div class="photograph" data-type="sprite" data-offsetY="1250" data-Xposition="25%" data-speed="2"></div>
+    	<article>
+    		<h2>The Daxian Group Method</h2>
+	    	<div class="textbox">    	
+				<p>We don't try to re-invent the wheel...</p>
+				<p>We just make the wheel smoother and more aerodynamic. That is to say, we figure out what your needs are and build you something to suit your needs. You are part of the process, from beginning to end...</p>
+				<p>What better resource to have during the development process, than the one(s) with all the ideas?</p>
+		    </div>
+    	</article>
+	</section>	
+	
+
+	<!-- Section #4 / HTML5 Video -->
+	<section id="fourth" class="story" data-speed="8" data-type="background" data-offsetY="250">
+    	<article>
+    		<h2>Really, It's Easy...</h2>
+	    	<div class="textbox">    	
+				<p>The last thing anyone wants, is a difficult experience.</p>
+				<p>The Daxian Group strives to make the development of your online presence as painless as possible. You can consider us your friends... Who will do all the work and meet your requirements, suggest ideas you might not have thought about and won't bat an eye if the direction changes mid-stream.</p>
+		    </div>
+    	</article>
+	</section>	
+
+	<!-- Section #5 / Background Only -->
+	<section id="fifth" class="story" data-speed="8" data-type="background">
+		<article>
+			<h2>Our Works</h2>
+			<div>
+				<p>We're proud of the work we've done. Take a look through some of our highlights, you should probably be impressed.</p>
+			</div>
+		</article>
+	</section>
+
+	<!-- Section #5 / The End-->
+	<section id="theend" class="story" data-speed="8" data-type="background" data-offsetY="250">    	
+		<div class="byebye" data-type="sprite" data-offsetY="-2000" data-Xposition="50%" data-speed="-2"></div>	
+	</section>
+@endsection
