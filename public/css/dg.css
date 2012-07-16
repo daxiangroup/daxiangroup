@@ -8,13 +8,15 @@
  * 		   @richardshepherd   
  */
 
+body { font-family: 'Droid Sans'; font-size: 14px; }
 
+article { background: url(../img/rubber_grip.png) repeat #333; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; border: solid 1px #666; box-shadow: 0 0 25px rgba(0,0,0,1); }
 article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-height: 1em; }
 
 .story { height: 900px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.3); border-bottom: 1px solid rgba(0,0,0,0.4); box-shadow: 0 0 50px rgba(0,0,0,0.8);}
 
 #first { background: url(../img/hardwood.jpg) 50% 0 no-repeat fixed; }
-#second { background: url(../img/slide2.jpg) 50% 0 no-repeat fixed; }
+#second { background: url(../img/vintage_bike.jpg) 50% 0 no-repeat fixed; }
 #third { background: url(../img/slide4.jpg) 50% 0 no-repeat fixed; }
 #fourth { background: url(../img/danboards.jpg) 50% 0 no-repeat fixed; }
 #fifth { background: url(../img/elephants.jpg) 50% 0 no-repeat fixed; }
@@ -22,7 +24,7 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
 
 /* Introduction */
 #first .smashinglogo { background: url(../img/smashing-logo.png) 50% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
-#first article { width: 100%; top: 300px; position: absolute; text-align: center; }
+#first article { background: none; border: none; box-shadow: none; width: 100%; top: 300px; position: absolute; text-align: center; }
 #first article p,
 #first article a { color: #ccc; }
 #first article a { text-decoration: underline; }
@@ -30,26 +32,31 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
 
 /* Background Only */
 #second { padding: 50px 0;}
-#second article { background: url(../img/grain.png) repeat #333; color: #fff; width: 445px; margin-left: 100px; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
+#second article { color: #fff; width: 445px; margin-left: 100px; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; }
 #second article p { margin-bottom: 25px; }
 #second article a { color: #ff0;}
 
 /* Photograph */
-#third article {  background: url(../img/grain.png) repeat #333; color: #fff; padding: 10px 20px; margin: 100px 0 0 60%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
+#third article {  color: #fff; padding: 10px 20px; margin: 100px 100px 0 60%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; }
 #third .photograph { background: url(../img/photo.png) transparent 40% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
-#third article p { width: 300px; margin-bottom: 25px; }
+#third article p { width: 375px; margin-bottom: 25px; }
 
 /* HTML5 Video */
-#fourth article {  margin-left: 10%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; }
+#fourth article { margin-left: 10%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; }
 #fourth article p { width: 300px; margin: 50px 0; }
 #fourth video { position: fixed; left: 50%; box-shadow: 0 0 25px rgba(0,0,0,0.7); z-index: 1;}
 
 #fifth { padding: 50px 0;}
-#fifth article { background: url(../img/grain.png) repeat #333; color: #fff; width: 445px; margin-left: 0px; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
+#fifth article { color: #fff; width: 445px; margin-left: 100px; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
 #fifth article p { margin-bottom: 25px; }
 #fifth article a { color: #ff0;}
+    #ding { width:300px; height:100px; outline:solid 1px #c00; right:0px; overflow: scroll; color:#fff; }
+        #ding div { width: 3000px; }
 
 /* The End */
-#theend .byebye { background: url(../img/theend.png) 40% 100px no-repeat fixed; height: 800px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
+/*#theend .byebye { background: url(../img/theend.png) 40% 100px no-repeat fixed; height: 550px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
+*/
+#theend { height: 800px; }
+#theend article { background: url(../img/iron.png) repeat #333; color: #fff; width: 445px; margin: 100px 0 0 100px; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
 
 
