@@ -1,6 +1,17 @@
 @layout('layouts/container')
 
 @section('content')
+	<div id="site-navigation" class="tabbable tabs-left">
+	  <ul class="nav nav-tabs">
+	    <li><a href="#first">Front</a></li>
+	    <li><a href="#second">Lowdown</a></li>
+	    <li><a href="#third">Method</a></li>
+	    <li><a href="#fourth">Really</a></li>
+	    <li><a href="#fifth">Works</a></li>
+	    <li><a href="#theend">Contact</a></li>
+	  </ul>
+	</div>
+
 	<!-- Section #1 / Intro -->
 	<section id="first" class="story" data-speed="8" data-type="background">    	
 		<div class="smashinglogo" data-type="sprite" data-offsetY="100" data-Xposition="50%" data-speed="-2"></div>		
@@ -29,8 +40,8 @@
     		<h2>The Daxian Group Method</h2>
 	    	<div class="textbox">    	
 				<p>We don't try to re-invent the wheel...</p>
-				<p>We just make the wheel smoother and more aerodynamic. That is to say, we figure out what your needs are and build you something to suit your needs. You are part of the process, from beginning to end...</p>
-				<p>What better resource to have during the development process, than the one(s) with all the ideas?</p>
+				<p>We just make the wheel smoother and reduce the road noise. That is to say, we figure out what your needs are and build you something to suit those needs. You are part of the process, from beginning to end...</p>
+				<p>What better resource to have during the development process, than the source with all the ideas?</p>
 		    </div>
     	</article>
 	</section>	
@@ -52,12 +63,36 @@
 		<article>
 			<h2>Our Works</h2>
 			<div>
-				<p>We're proud of the work we've done. Take a look through some of our highlights, you should be impressed.</p>
+				<p>We're proud of the work we've done. Take a look through some of our highlights, we think you'll be impressed.</p>
 			</div>
 		</article>
-		<div id="ding">
-			<div>
-				waff! this is a really long line to illustrate the scrolling sideways. this will be used for the scrolling of "our works".
+		<div id="work-container">
+			<div class="wrapper-outer">
+				<div class="wrapper-inner">
+
+					<div class="site-box">
+						<div class="screenshot"></div>
+						<div class="description">
+							My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?
+						</div>
+					</div>
+
+					<div class="site-box">
+						<div class="screenshot"></div>
+						<div class="description">
+							My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?
+						</div>
+					</div>
+
+					<div class="site-box">
+						<div class="screenshot"></div>
+						<div class="description">
+							My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?
+						</div>
+					</div>
+
+					<div class="site-box">adf</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -71,6 +106,7 @@
 	    		<p>Fill out the contact form and we'll gladly return your inquiry, as quickly as possible.</p>
 	    	</div>
 	    </article>
+	    @include('home.contact')
 		<div class="byebye" data-type="sprite" data-offsetY="-2000" data-Xposition="50%" data-speed="-2"></div>	
 	</section>
 @endsection

@@ -78,4 +78,18 @@ $(document).ready(function(){
 			
 	});	// each data-type
 
+
+	// Site Navigation links, smooth scrolling
+	$('#site-navigation li a').each(function() {
+		$(this).bind('click',function(event){
+	        var anchor = $(this);
+
+	        $('html, body').stop().animate({
+	            scrollTop: $(anchor.attr('href')).offset().top
+	        }, 350);
+	        event.preventDefault();
+	    });
+    });			
+
+
 }); // document ready

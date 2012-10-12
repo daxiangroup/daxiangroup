@@ -11,11 +11,10 @@
     <title>The Daxian Group</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    {{ HTML::style('css/style.css') }}
+    {{ HTML::style('css/bootstrap.min.css') }}
     {{ HTML::style('css/dg.css') }}
     {{ HTML::style('http://fonts.googleapis.com/css?family=Lobster+Two:700&v2') }}
     {{ HTML::style('http://fonts.googleapis.com/css?family=Droid+Sans') }}
-    {{ HTML::script('js/libs/modernizr-2.5.3.min.js') }}
 </head>
 <body>
     <header>

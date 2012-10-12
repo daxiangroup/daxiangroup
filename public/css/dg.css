@@ -1,14 +1,15 @@
-/**
- * Parallax Scrolling Tutorial
- * For Smashing Magazine
- * July 2011
- *  
- * Author: Richard Shepherd
- *		   www.richardshepherd.com
- * 		   @richardshepherd   
- */
-
 body { font-family: 'Droid Sans'; font-size: 14px; }
+
+#site-navigation {
+    position: fixed;
+    right: 0px;
+    top: 30px; 
+    z-index:1000;
+}
+    #site-navigation ul {
+        margin-right: 0px;
+        border-right: none;
+    }
 
 article { background: url(../img/rubber_grip.png) repeat #333; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; border: solid 1px #666; box-shadow: 0 0 25px rgba(0,0,0,1); }
 article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-height: 1em; }
@@ -22,7 +23,6 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
 #fifth { background: url(../img/elephants.jpg) 50% 0 no-repeat fixed; }
 #theend { background: url(../img/hardwood.jpg) 50% bottom no-repeat fixed; }
 
-/* Introduction */
 #first .smashinglogo { background: url(../img/smashing-logo.png) 50% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
 #first article { background: none; border: none; box-shadow: none; width: 100%; top: 300px; position: absolute; text-align: center; }
 #first article p,
@@ -30,19 +30,16 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
 #first article a { text-decoration: underline; }
 #first article a:hover { color: #fff; }
 
-/* Background Only */
 #second { padding: 50px 0;}
 #second article { color: #fff; width: 445px; margin-left: 100px; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; }
 #second article p { margin-bottom: 25px; }
 #second article a { color: #ff0;}
 
-/* Photograph */
-#third article {  color: #fff; padding: 10px 20px; margin: 100px 100px 0 60%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; }
+#third article {  color: #fff; padding: 10px 20px; margin: 100px 150px 0 56%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; }
 #third .photograph { background: url(../img/photo.png) transparent 40% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
 #third article p { width: 375px; margin-bottom: 25px; }
 
-/* HTML5 Video */
-#fourth article { margin-left: 10%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; }
+#fourth article { background: none; border: none; box-shadow: none; margin-left: 10%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; }
 #fourth article p { width: 300px; margin: 50px 0; }
 #fourth video { position: fixed; left: 50%; box-shadow: 0 0 25px rgba(0,0,0,0.7); z-index: 1;}
 
@@ -50,13 +47,30 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
 #fifth article { color: #fff; width: 445px; margin-left: 100px; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
 #fifth article p { margin-bottom: 25px; }
 #fifth article a { color: #ff0;}
-    #ding { width:300px; height:100px; outline:solid 1px #c00; right:0px; overflow: scroll; color:#fff; }
-        #ding div { width: 3000px; }
+    #work-container { width:100%; height:350px; margin-top: 30px; overflow: hidden; color:#fff; }
+        #work-container .wrapper-outer { width: 100%; height: 400px; overflow-x: scroll; overflow-y: hidden; }
+        #work-container .wrapper-inner { width: 8000px; }
+            #work-container .site-box {
+                position: relative;
+                width: 800px;
+                height: 300px;
+                float: left;
+                margin: 0 100px 0 50px;
+            }
+                .site-box .screenshot {
+                    border: solid 2px #00c;
+                    width: 300px;
+                    height: 300px;
+                    background-color: #0c0;
+                    float: left;
+                    margin-right: 10px;
+                }
 
 /* The End */
 /*#theend .byebye { background: url(../img/theend.png) 40% 100px no-repeat fixed; height: 550px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
 */
 #theend { height: 800px; }
 #theend article { background: url(../img/iron.png) repeat #333; color: #fff; width: 445px; margin: 100px 0 0 100px; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
+    .container.contact { outline: solid 1px #c00; width: 500px; height: 100px; margin: 40px auto 0 auto; color: #fff; }
 
 
