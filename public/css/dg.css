@@ -16,38 +16,37 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
 
 .story { height: 900px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.3); border-bottom: 1px solid rgba(0,0,0,0.4); box-shadow: 0 0 50px rgba(0,0,0,0.8);}
 
-#first { background: url(../img/hardwood.jpg) 50% 0 no-repeat fixed; }
-#second { background: url(../img/vintage_bike.jpg) 50% 0 no-repeat fixed; }
-#third { background: url(../img/slide4.jpg) 50% 0 no-repeat fixed; }
-#fourth { background: url(../img/danboards.jpg) 50% 0 no-repeat fixed; }
-#fifth { background: url(../img/elephants.jpg) 50% 0 no-repeat fixed; }
-#theend { background: url(../img/hardwood.jpg) 50% bottom no-repeat fixed; }
+#front { background: url(../img/hardwood.jpg) 50% 0 no-repeat fixed; }
+#lowdown { background: url(../img/vintage_bike.jpg) 50% 0 no-repeat fixed; }
+#method { background: url(../img/slide4.jpg) 50% 0 no-repeat fixed; }
+#really { background: url(../img/danboards.jpg) 50% 0 no-repeat fixed; }
+#works { background: url(../img/elephants.jpg) 50% 0 no-repeat fixed; }
+#contact { background: url(../img/hardwood.jpg) 50% bottom no-repeat fixed; }
 
 /*#first .smashinglogo { background: url(../img/smashing-logo.png) center top no-repeat fixed; height: 2000px; padding: 0; margin: 0 auto; outline: solid 1px #c00; width: 700px; position: relative; }*/
-#first .smashinglogo { background: url(../img/smashing-logo.png) center top no-repeat fixed; width: 100%; height: 900px; margin: 0; position: relative; }
-#first article { background: none; border: none; box-shadow: none; width: 100%; top: 300px; position: absolute; text-align: center; }
-#first article p,
-#first article a { color: #ccc; }
-#first article a { text-decoration: underline; }
-#first article a:hover { color: #fff; }
+#front .smashinglogo { background: url(../img/smashing-logo.png) center top no-repeat fixed; width: 100%; height: 900px; margin: 0; position: relative; }
+#front article { background: none; border: none; box-shadow: none; width: 100%; top: 300px; position: absolute; text-align: center; }
+#front article p,
+#front article a { color: #ccc; }
+#front article a { text-decoration: underline; }
+#front article a:hover { color: #fff; }
 
-#second { padding: 50px 0;}
-#second article { color: #fff; width: 445px; margin-left: 100px; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; }
-#second article p { margin-bottom: 25px; }
-#second article a { color: #ff0;}
+#lowdown { padding: 50px 0;}
+#lowdown article { color: #fff; width: 445px; margin-left: 100px; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; }
+#lowdown article p { margin-bottom: 25px; }
+#lowdown article a { color: #ff0;}
 
-#third article {  color: #fff; padding: 10px 20px; margin: 100px 150px 0 56%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; }
-#third .photograph { background: url(../img/photo.png) transparent 40% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
-#third article p { width: 375px; margin-bottom: 25px; }
+#method article {  color: #fff; padding: 10px 20px; margin: 100px 150px 0 56%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; }
+#method .photograph { background: url(../img/photo.png) transparent 40% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
+#method article p { width: 375px; margin-bottom: 25px; }
 
-#fourth article { background: none; border: none; box-shadow: none; margin-left: 10%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; }
-#fourth article p { width: 300px; margin: 50px 0; }
-#fourth video { position: fixed; left: 50%; box-shadow: 0 0 25px rgba(0,0,0,0.7); z-index: 1;}
+#really article { background: none; border: none; box-shadow: none; margin-left: 10%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; }
+#really article p { width: 300px; margin: 50px 0; }
 
-#fifth { padding: 50px 0;}
-#fifth article { color: #fff; width: 445px; margin-left: 100px; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
-#fifth article p { margin-bottom: 25px; }
-#fifth article a { color: #ff0;}
+#works { padding: 50px 0;}
+#works article { color: #fff; width: 445px; margin-left: 100px; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
+#works article p { margin-bottom: 25px; }
+#works article a { color: #ff0;}
     #work-container { width:100%; height:350px; margin-top: 30px; overflow: hidden; color:#fff; }
         #work-container .wrapper-outer { width: 100%; height: 400px; overflow-x: scroll; overflow-y: hidden; }
         #work-container .wrapper-inner { width: 8000px; }
@@ -70,8 +69,8 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
 /* The End */
 /*#theend .byebye { background: url(../img/theend.png) 40% 100px no-repeat fixed; height: 550px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
 */
-#theend { height: 800px; }
-#theend article { background: url(../img/iron.png) repeat #333; color: #fff; width: 445px; margin: 100px 0 0 100px; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
+#contact { height: 800px; }
+#contact article { background: url(../img/iron.png) repeat #333; color: #fff; width: 445px; margin: 100px 0 0 100px; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
     .container.contact { outline: solid 1px #c00; width: 500px; height: 100px; margin: 40px auto 0 auto; color: #fff; }
 
 

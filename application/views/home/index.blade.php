@@ -3,17 +3,17 @@
 @section('content')
 	<div id="site-navigation" class="tabbable tabs-left">
 	  <ul class="nav nav-tabs">
-	    <li><a href="#first">Front</a></li>
-	    <li><a href="#second">Lowdown</a></li>
-	    <li><a href="#third">Method</a></li>
-	    <li><a href="#fourth">Really</a></li>
-	    <li><a href="#fifth">Works</a></li>
-	    <li><a href="#theend">Contact</a></li>
+	    <li><a href="#front">Front</a></li>
+	    <li><a href="#lowdown">Lowdown</a></li>
+	    <li><a href="#method">Method</a></li>
+	    <li><a href="#really">Really</a></li>
+	    <li><a href="#works">Works</a></li>
+	    <li><a href="#contact">Contact</a></li>
 	  </ul>
 	</div>
 
 	<!-- Section #1 / Intro -->
-	<section id="first" class="story scrollable vertical" data-stellar-background-ratio="0.1">
+	<section id="front" class="story scrollable vertical" data-stellar-background-ratio="0.1">
 		<div class="smashinglogo" data-stellar-background-ratio="-1" data-stellar-horizontal-offset="50%" data-stellar-vertical-offset="100">
 		</div>
 		<!--<div class="smashinglogo" data-stellar-background-ratio="-1"></div>-->
@@ -24,7 +24,7 @@
 	</section>
 
 	<!-- Section #2 / Background Only -->
-	<section id="second" class="story" data-stellar-background-ratio="-0.1" data-stellar-horizontal-offset="-2000" data-stellar-vertical-offset="-3000">
+	<section id="lowdown" class="story" data-stellar-background-ratio="-0.1" data-stellar-horizontal-offset="-2000" data-stellar-vertical-offset="-3000">
 		<article>
 			<h2>The Lowdown</h2>
 			<div class="textbox">
@@ -36,7 +36,7 @@
 	</section>
 	
 	<!-- Section #3 / Photos -->
-	<section id="third" class="story" data-stellar-background-ratio="0.3" data-stellar-horizontal-offset="2000" data-stellar-vertical-offset="920">    	
+	<section id="method" class="story" data-stellar-background-ratio="0.3" data-stellar-horizontal-offset="2000" data-stellar-vertical-offset="920">    	
 		<div class="photograph" data-stellar-background-ratio="2" data-stellar-vertical-offset="-170" data-stellar-horizontal-offset="-120"></div>
     	<article>
     		<h2>The Daxian Group Method</h2>
@@ -50,7 +50,7 @@
 	
 
 	<!-- Section #4 / HTML5 Video -->
-	<section id="fourth" class="story" data-stellar-background-ratio="-0.3" data-stellar-horizontal-offset="-500" data-stellar-vertical-offset="-920">
+	<section id="really" class="story" data-stellar-background-ratio="-0.3" data-stellar-horizontal-offset="-500" data-stellar-vertical-offset="-920">
     	<article>
     		<h2>Really, It's Easy...</h2>
 	    	<div class="textbox">    	
@@ -61,7 +61,7 @@
 	</section>	
 
 	<!-- Section #5 / Background Only -->
-	<section id="fifth" class="story" data-stellar-background-ratio="0.5" data-stellar-horizontal-offset="500" data-stellar-vertical-offset="500">
+	<section id="works" class="story" data-stellar-background-ratio="0.5" data-stellar-horizontal-offset="500" data-stellar-vertical-offset="500">
 		<article>
 			<h2>Our Works</h2>
 			<div>
@@ -100,7 +100,7 @@
 	</section>
 
 	<!-- Section #5 / The End-->
-	<section id="theend" class="story" data-speed="8" data-type="background" data-offsetY="250">    	
+	<section id="contact" class="story" data-speed="8" data-type="background" data-offsetY="250">    	
     	<article>
     		<h2>Contact!</h2>
 	    	<div class="textbox">
