@@ -13,8 +13,10 @@
 	</div>
 
 	<!-- Section #1 / Intro -->
-	<section id="first" class="story" data-stellar-ratio="2" data-stellar-background-ratio="0.5">    	
-		<div class="smashinglogo" data-type="sprite" data-offsetY="100" data-Xposition="50%" data-speed="-2"></div>		
+	<section id="first" class="story scrollable vertical" data-stellar-background-ratio="0.1">
+		<div class="smashinglogo" data-stellar-background-ratio="-1" data-stellar-horizontal-offset="50%" data-stellar-vertical-offset="100">
+		</div>
+		<!--<div class="smashinglogo" data-stellar-background-ratio="-1"></div>-->
 		<article>
 
 			{{ HTML::image('img/tutorial-title.png', 'tutorial-title', array('width'=>711, 'height'=>242)) }}
@@ -22,7 +24,7 @@
 	</section>
 
 	<!-- Section #2 / Background Only -->
-	<section id="second" class="story" data-speed="-8" data-type="background" data-offsetY="-250">
+	<section id="second" class="story" data-stellar-background-ratio="-0.1" data-stellar-horizontal-offset="-2000" data-stellar-vertical-offset="-3000">
 		<article>
 			<h2>The Lowdown</h2>
 			<div class="textbox">
@@ -34,8 +36,8 @@
 	</section>
 	
 	<!-- Section #3 / Photos -->
-	<section id="third" class="story" data-speed="6" data-type="background" data-offsetY="250">    	
-		<div class="photograph" data-type="sprite" data-offsetY="1250" data-Xposition="25%" data-speed="2"></div>
+	<section id="third" class="story" data-stellar-background-ratio="0.3" data-stellar-horizontal-offset="2000" data-stellar-vertical-offset="920">    	
+		<div class="photograph" data-stellar-background-ratio="2" data-stellar-vertical-offset="-170" data-stellar-horizontal-offset="-120"></div>
     	<article>
     		<h2>The Daxian Group Method</h2>
 	    	<div class="textbox">    	
@@ -48,7 +50,7 @@
 	
 
 	<!-- Section #4 / HTML5 Video -->
-	<section id="fourth" class="story" data-speed="-8" data-type="background" data-offsetY="-500">
+	<section id="fourth" class="story" data-stellar-background-ratio="-0.3" data-stellar-horizontal-offset="-500" data-stellar-vertical-offset="-920">
     	<article>
     		<h2>Really, It's Easy...</h2>
 	    	<div class="textbox">    	
@@ -59,7 +61,7 @@
 	</section>	
 
 	<!-- Section #5 / Background Only -->
-	<section id="fifth" class="story" data-speed="8" data-type="background">
+	<section id="fifth" class="story" data-stellar-background-ratio="0.5" data-stellar-horizontal-offset="500" data-stellar-vertical-offset="500">
 		<article>
 			<h2>Our Works</h2>
 			<div>

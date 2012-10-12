@@ -23,7 +23,8 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
 #fifth { background: url(../img/elephants.jpg) 50% 0 no-repeat fixed; }
 #theend { background: url(../img/hardwood.jpg) 50% bottom no-repeat fixed; }
 
-#first .smashinglogo { background: url(../img/smashing-logo.png) 50% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
+/*#first .smashinglogo { background: url(../img/smashing-logo.png) center top no-repeat fixed; height: 2000px; padding: 0; margin: 0 auto; outline: solid 1px #c00; width: 700px; position: relative; }*/
+#first .smashinglogo { background: url(../img/smashing-logo.png) center top no-repeat fixed; width: 100%; height: 900px; margin: 0; position: relative; }
 #first article { background: none; border: none; box-shadow: none; width: 100%; top: 300px; position: absolute; text-align: center; }
 #first article p,
 #first article a { color: #ccc; }
