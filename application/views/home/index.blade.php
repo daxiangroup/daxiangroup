@@ -13,7 +13,7 @@
 	</div>
 
 	<!-- Section #1 / Intro -->
-	<section id="first" class="story" data-speed="8" data-type="background">    	
+	<section id="first" class="story" data-stellar-ratio="2" data-stellar-background-ratio="0.5">    	
 		<div class="smashinglogo" data-type="sprite" data-offsetY="100" data-Xposition="50%" data-speed="-2"></div>		
 		<article>
 

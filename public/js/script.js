@@ -1,4 +1,7 @@
-
+$(document).ready(function() {
+	$.stellar();
+});
+/*
 // On your marks, get set...
 $(document).ready(function(){
 						
@@ -93,3 +96,4 @@ $(document).ready(function(){
 
 
 }); // document ready
+*/

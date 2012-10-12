@@ -33,6 +33,7 @@
 
     {{ HTML::script('js/plugins.js') }}
     {{ HTML::script('js/script.js') }}
+    {{ HTML::script('js/libs/jquery.stellar.js') }}
     <!--[if lt IE 7 ]>
         {{ HTML::script('js/libs/dd_belatedpng.js') }}
         <script>DD_belatedPNG.fix("img, .png_bg");
