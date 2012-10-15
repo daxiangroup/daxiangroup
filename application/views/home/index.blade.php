@@ -68,35 +68,7 @@
 				<p>We're proud of the work we've done. Take a look through some of our highlights, we think you'll be impressed.</p>
 			</div>
 		</article>
-		<div id="work-container">
-			<div class="wrapper-outer">
-				<div class="wrapper-inner">
-
-					<div class="site-box">
-						<div class="screenshot"></div>
-						<div class="description">
-							My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?
-						</div>
-					</div>
-
-					<div class="site-box">
-						<div class="screenshot"></div>
-						<div class="description">
-							My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?
-						</div>
-					</div>
-
-					<div class="site-box">
-						<div class="screenshot"></div>
-						<div class="description">
-							My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?
-						</div>
-					</div>
-
-					<div class="site-box">adf</div>
-				</div>
-			</div>
-		</div>
+		@include('home.works')
 	</section>
 
 	<!-- Section #5 / The End-->

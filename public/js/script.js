@@ -1,4 +1,7 @@
+var work_container_scroll_pos = 0;
+
 $(document).ready(function() {
+
 	$.stellar();
 
 	// Site Navigation links, smooth scrolling
@@ -13,7 +16,72 @@ $(document).ready(function() {
 	    });
     });			
 
+	$('#control-left').click(function() {
+		site_box_scroll('left');
+	});
+	$('#control-right').click(function() {
+		site_box_scroll('right');
+	});
+
+	/*
+	$('#work-container .wrapper-outer').scroll(function(event) {
+		if ($(this).scrollLeft() > work_container_scroll_pos) { site_box_scroll('right'); }
+		else { site_box_scroll('left'); }
+
+		work_container_scroll_pos = $(this).scrollLeft();
+
+		event.preventDefault();
+//		site_box_scroll('right');
+	});
+	*/
+
+	$('#work-container .site-box').each(function() {
+		var boxWidth = $('#work-container').width();
+
+		if ( ! $(this).hasClass('active')) {
+			$(this).css('left', ((boxWidth + 20) + 'px'));
+		};
+
+	});
+
 });
+
+function site_box_scroll(direction) {
+	var count = $('#work-container .site-box').length;
+	var boxWidth = $('#work-container').width() + 20;
+	var duration = 500;
+	var current = $('#work-container .active').attr('id').split('-');
+	current = current[1];
+
+	if (direction == 'left') {
+		var next = Number(current) - Number(1);
+		if (current == 1) { return; }
+	}
+	if (direction == 'right') {
+		var next = Number(current) + Number(1);
+		if (current == count) { return; }
+	}
+
+	current = '#box-'+current;
+	next = '#box-'+next;
+
+	$(current).animate({
+		left: '+='+boxWidth,
+		zIndex: 0,
+		opacity: 0
+	}, duration, function() {
+		$(current).css({ opacity: 1 });
+	});
+	$(current).removeClass('active');
+
+	$(next).animate({
+		left: '-='+boxWidth,
+		zIndex: 100,
+		opacity: 1
+	}, duration);
+	$(next).addClass('active');
+
+}
 /*
 // On your marks, get set...
 $(document).ready(function(){
