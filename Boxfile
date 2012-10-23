@@ -1,2 +1,4 @@
 web1:
   document_root: public
+  shared_writeable_dirs:
+    - storage/views
