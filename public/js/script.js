@@ -66,20 +66,24 @@ function site_box_scroll(direction) {
 	next = '#box-'+next;
 
 	$(current).animate({
-		left: '+='+boxWidth,
+		//left: '+='+boxWidth,
+		top: '+=500',
 		zIndex: 0,
 		opacity: 0
 	}, duration, function() {
-		$(current).css({ opacity: 1 });
+		$(current).removeClass('active');
+		$(current).animate({ top: '-=500', left: '+='+boxWidth }, 10, function() {
+			$(current).css({ opacity: 1 });
+		});
 	});
-	$(current).removeClass('active');
 
 	$(next).animate({
 		left: '-='+boxWidth,
 		zIndex: 100,
 		opacity: 1
-	}, duration);
-	$(next).addClass('active');
+	}, duration, function() {
+		$(next).addClass('active');
+	});
 
 }
 /*
