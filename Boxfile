@@ -2,3 +2,5 @@ web1:
   document_root: public
   shared_writable_dirs:
     - storage/views
+  php_extensions:
+    - mcrypt
