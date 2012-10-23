@@ -4,3 +4,10 @@ web1:
     - storage/views
   php_extensions:
     - mcrypt
+web2:
+  name: admin
+  document_root: public
+  shared_writable_dirs:
+    - storage/views
+  php_extensions:
+    - mcrypt
