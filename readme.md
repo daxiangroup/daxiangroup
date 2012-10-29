@@ -20,7 +20,7 @@ enjoy, not something that is painful. Enjoy the fresh air.
 
 ## A Few Examples
 
-### Hello World:
+### Hello World: 
 
 ```php
 <?php
