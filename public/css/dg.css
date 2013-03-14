@@ -1,93 +1,265 @@
-body { font-family: 'Droid Sans'; font-size: 14px; }
-
-#site-navigation {
-    position: fixed;
-    right: 0px;
-    top: 30px; 
-    z-index:1000;
+html, body {
+    height: 100%;
+    font-family: 'Droid Sans';
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
 }
-    #site-navigation ul {
-        margin-right: 0px;
-        border-right: none;
+
+#wrapper, #scroller, #main {
+    position: relative;
+    width: 9000px;
+    height: 100%;
+}
+
+.mobile body {
+  overflow: hidden;
+}
+
+.mobile #wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 3000px;
+}
+
+.mobile #scroller {
+  width: 3000px;
+}
+
+/*****[ Panels ]***************************************************************/
+.panel {
+    position:relative;
+    width: 700px;
+    height: 100%;
+    float: left;
+    background-color: #222;
+    color: #666;
+    overflow: hidden;
+}
+    .panel .content {
+        padding: 15px;
+    }
+    .panel50  { width: 500px; }
+    .panel60  { width: 600px; }
+    .panel65  { width: 650px; }
+    .panel82  { width: 825px; }
+    .panel85  { width: 850px; }
+    .panel100 { width: 1000px; }
+
+    .inset {
+        box-shadow: inset 0 0 50px rgba(0,0,0,1.8);
+    }
+/*
+.story {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    width: 500px;
+    max-width: 1920px;
+    position: relative;
+    margin: 0 auto;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    float: left;
+}
+*/
+    .panel h2 {
+        font: normal 18px 'Nova Square';
+        color: #f90;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    }
+    .panel.impact h2 {
+        font-size: 60px;
     }
 
-article { background: url(../img/rubber_grip.png) repeat #333; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; border: solid 1px #666; box-shadow: 0 0 25px rgba(0,0,0,1); }
-article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-height: 1em; }
+#welcome {
+    position: relative;
+    background-image: url(../img/elephants.jpg);
+    background-position: -400px bottom;
+    border-left: solid 1px #333;
+    border-right: solid 1px #333;
+    z-index: 10;
+}
 
-.story { height: 900px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.3); border-bottom: 1px solid rgba(0,0,0,0.4); box-shadow: 0 0 50px rgba(0,0,0,0.8);}
+#lowdown {
+    position: relative;
+    z-index: 20;
+}
+    #lowdown .filler {
+        background: url(../img/stripey.jpg) -300px 0;
+        height: 60%;
+        box-shadow: inset 0 0 50px rgba(0,0,0,0.8);
+        border-bottom: solid 1px #333;
+    }
 
-#front { background: url(../img/hardwood.jpg) 50% 0 no-repeat fixed; }
-#lowdown { background: url(../img/vintage_bike.jpg) 50% 0 no-repeat fixed; }
-#method { background: url(../img/slide4.jpg) 50% 0 no-repeat fixed; }
-#really { background: url(../img/danboards.jpg) 50% 0 no-repeat fixed; }
-#works { background: url(../img/elephants.jpg) 50% 0 no-repeat fixed; }
-#contact { background: url(../img/hardwood.jpg) 50% bottom no-repeat fixed; }
+#method {
+    position: relative;
+    background: #F7F7F7 url(../img/tree.jpg) no-repeat 100px bottom;
+    z-index: 30;
+    border-right: solid 1px #333;
+}
+    #method h2 {
+        color: #333;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    }
+    #method .content {
+        width: 70%;
+    }
 
-/*#first .smashinglogo { background: url(../img/smashing-logo.png) center top no-repeat fixed; height: 2000px; padding: 0; margin: 0 auto; outline: solid 1px #c00; width: 700px; position: relative; }*/
-#front .smashinglogo { background: url(../img/smashing-logo.png) center top no-repeat fixed; width: 100%; height: 900px; margin: 0; position: relative; }
-#front article { background: none; border: none; box-shadow: none; width: 100%; top: 300px; position: absolute; text-align: center; }
-#front article p,
-#front article a { color: #ccc; }
-#front article a { text-decoration: underline; }
-#front article a:hover { color: #fff; }
-
-#lowdown { padding: 50px 0;}
-#lowdown article { color: #fff; width: 445px; margin-left: 100px; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; }
-#lowdown article p { margin-bottom: 25px; }
-#lowdown article a { color: #ff0;}
-
-#method article {  color: #fff; padding: 10px 20px; margin: 100px 150px 0 56%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; }
-#method .photograph { background: url(../img/photo.png) transparent 40% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
-#method article p { width: 375px; margin-bottom: 25px; }
-
-#really article { background: none; border: none; box-shadow: none; margin-left: 10%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; }
-#really article p { width: 300px; margin: 50px 0; }
-
-#works { padding: 50px 0;}
-#works article { color: #fff; width: 445px; margin-left: 100px; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
-#works article p { margin-bottom: 25px; }
-#works article a { color: #ff0;}
-    #work-container { position: relative; width:100%; height:350px; margin-top: 30px; overflow: hidden; color:#fff; }
-        #work-container .wrapper-outer { position: relative; width: 100%; height: 400px; overflow-x: scroll; overflow-y: scroll; }
-        #work-container .wrapper-inner { position: absolute; top: 0px; left: 0px; width: 8000px; }
-            .wrapper-inner.descriptions .screenshot { visibility: hidden; }
-            .wrapper-inner.screenshots .description { visibility: hidden; }
-            #work-container .site-box {
-                position: absolute;
-                width: 800px;
-                height: 300px;
-                float: left;
-                margin: 0 100px 0 90px;
-            }
-                .site-box .screenshot {
-                    border: solid 2px #00c;
-                    width: 300px;
-                    height: 300px;
-                    background-color: #0c0;
-                    float: left;
-                    margin-right: 10px;
-                }
-        #control-left, #control-right {
+#works {
+    position: relative;
+}
+    #works .content {
+        position: absolute;
+        width: 274px;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        float: left;
+        padding-top: 25%;
+        border-top: solid 1px #333;
+        border-right: solid 1px #333;
+        z-index: 100;
+    }
+    #works .highlights {
+        position: absolute;
+        width: 520px;
+        height: 100%;
+        top: 0px;
+        right: 0px;
+        background: url(../img/stripey.jpg) -300px 0;
+        border-top: solid 1px #333;
+        z-index: 90;
+        overflow: hidden;
+    }
+        #works .hl {
             position: absolute;
-            width: 80px; 
-            height: 100%;
-            top: 0px;
-            outline: solid 1px #c00;
-            background-color: #c00;
-            z-index: 10;
+            width: 274px;
+            height: 275px;
+            border: solid 1px #333;
         }
-        #control-left {
-            left: 0px;
+            #works .hl .details {
+                position: relative;
+                background-color: #333;
+                opacity: 0.9;
+                width: 100%;
+                height: 100%;
+                color: #fff;
+                display: none;
+            }
+                #works .hl .details-content {
+                    position: relative;
+                    left: 15px;
+                    top: 150px;
+                    width: 244px;
+                    height: 124px;
+                }
+                    #works .work-title {
+                        font-size: 20px;
+                    }
+                    #works .work-description {
+                        margin: 0 0 20px 10px;
+                        color: #ccc;
+                    }
+                    #works .work-link {
+                        position: absolute;
+                        bottom: 30px;
+                        right: 0px;
+                    }
+                        #works .work-link a {
+                            color: #f90;
+                        }
+
+        #works .hl:hover {
+            z-index: 200;
         }
-        #control-right {
-            right: 8px;
+            #works .hl:hover .details {
+                display: inline-block;
+            }
+                #works .hl:hover .details-content {
+                    bottom: 0px;
+                }
+        #works .highlights .bumblebees {
+            top: 10px;
+            background-image: url(../img/ss-bumblebees.png);
+        }
+        #works .highlights .toronto-condos {
+            background: url(../img/ss-torontocondos.png) bottom left;
+            bottom: 200px;
+        }
+        #works .highlights .vivid {
+            background: url(../img/ss-vividvoice.png);
+            bottom: 25px;
         }
 
-/* The End */
-/*#theend .byebye { background: url(../img/theend.png) 40% 100px no-repeat fixed; height: 550px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
-*/
-#contact { height: 800px; }
-#contact article { background: url(../img/iron.png) repeat #333; color: #fff; width: 445px; margin: 60px 0 0 100px; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
-    .container.contact { outline: solid 1px #c00; width: 500px; height: 100px; margin: 40px auto 0 auto; color: #fff; }
+#really {
+    position: relative;
+    background: url(../img/vintage_bike.jpg) -300px bottom;
+    border-left: solid 1px #333;
+    border-right: solid 1px #333;
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.8);
+}
+    #really .content {
+        position: absolute;
+        bottom: 20px;
+        left: 0px;
+        width: 70%;
+        margin-top: 40%;
+        color: #000;
+    }
+    #really h2 {
+        color: #333;
+    }
 
+/*****[ Control ]**************************************************************/
+#ctr-control {
+    position: relative;
+    width: 140px;
+    color: #fff;
+    float: left;
+}
 
+/*****[ Contact Screen ]*******************************************************/
+.form-row {
+    margin-bottom: 5px;
+}
+.form-row.controls {
+    margin-top: 20px;
+}
+
+.form-label {
+    width: 140px;
+    float: left;
+}
+    .form-label label {
+        font-size: 16px;
+        margin-top: 4px;
+    }
+
+#ctr-contact {
+}
+    #frm-contact {
+        margin-top: 40px;
+    }
+
+    #frm-contact input[type="text"] {
+        width: 350px;
+    }
+    #frm-contact input[type="checkbox"] {
+        float: left;
+        margin-right: 4px;
+    }
+    #frm-contact textarea {
+        width: 350px;
+        height: 130px;
+    }
+
+#ctr-errors label {
+    display: inline;
+    cursor: pointer;
+    font-style: italic;
+}
